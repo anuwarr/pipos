@@ -21,11 +21,24 @@ class _NavBarState extends State<NavBar> {
         width: 100.0,
         color: Colors.grey,
         child: Stack(
-          children: const [
-            CompanyName(),
-            Align(
+          children: [
+            const CompanyName(),
+            const Align(
               alignment: Alignment.center,
               child: NavIcon(),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 40.0),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                // ignore: avoid_unnecessary_containers
+                child: Container(
+                  child: const Icon(
+                    Feather.log_out,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
             ),
           ],
         ),
