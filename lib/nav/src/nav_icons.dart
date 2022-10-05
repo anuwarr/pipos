@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+import 'package:pi_pos/Pos/pos_page.dart';
 
 class NavIcon extends StatefulWidget {
   const NavIcon({super.key});
@@ -53,6 +54,8 @@ class _NavIconState extends State<NavIcon> {
             touched: () {
               setState(() {
                 select(2);
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const PosPage()));
               });
             },
           ),

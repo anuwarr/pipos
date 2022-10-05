@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class Stats extends StatefulWidget {
@@ -14,7 +13,7 @@ class _StatsState extends State<Stats> {
     return Row(
       children: [
         Column(
-          children: [
+          children: const [
             Text('Today Sales'),
             SizedBox(
               height: 20.0,

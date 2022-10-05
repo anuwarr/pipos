@@ -37,15 +37,16 @@ class _DashBoradState extends State<DashBorad> {
               child: Text(datTime.format(AmericanDateFormats.dayOfWeek)),
             ),
             Container(
-              margin: EdgeInsets.only(top: 25.0 , left: 30.0) ,
-              child: Row(
-                children: [Stats(), 
-                SizedBox(width: 20.0,),
-                Stats()],
-              ) 
-            ),
-
-            
+                margin: const EdgeInsets.only(top: 25.0, left: 30.0),
+                child: Row(
+                  children: const [
+                    Stats(),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    Stats()
+                  ],
+                )),
             Container(
               margin: const EdgeInsets.only(top: 25.0, left: 30.0),
               height: 200.0,
@@ -54,7 +55,10 @@ class _DashBoradState extends State<DashBorad> {
                 //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 //crossAxisAlignment: CrossAxisAlignment.center,
                 children: const [
-                  ShortCutCards(color: Colors.transparent, statName: 'Sales', totalStat: '200,000')
+                  ShortCutCards(
+                      color: Colors.transparent,
+                      statName: 'Sales',
+                      totalStat: '200,000')
                 ],
               ),
             ),

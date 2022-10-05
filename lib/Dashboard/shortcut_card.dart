@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class ShortCutCards extends StatefulWidget {
   final Color color;
@@ -55,13 +54,13 @@ class _StatCardState extends State<ShortCutCards> {
                 Container(
                   height: 30.0,
                   width: 30.0,
+                  decoration:
+                      BoxDecoration(borderRadius: BorderRadius.circular(30.0)),
                   child: Icon(
                     Icons.shopping_cart,
                     color: !hovered ? Colors.grey : Colors.black,
                     size: 25,
                   ),
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(30.0)),
                 )
               ],
             ),
