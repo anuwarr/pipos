@@ -37,9 +37,9 @@ class _DashBoradState extends State<DashBorad> {
               child: Text(datTime.format(AmericanDateFormats.dayOfWeek)),
             ),
             Container(
-                margin: const EdgeInsets.only(top: 25.0, left: 30.0),
+                margin: EdgeInsets.only(top: 25.0, left: 30.0),
                 child: Row(
-                  children: const [
+                  children: [
                     Stats(),
                     SizedBox(
                       width: 20.0,
